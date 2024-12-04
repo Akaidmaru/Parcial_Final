@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
+import Message from "./Message";
 
 const Form = () => {
   //Aqui deberan implementar el form completo con sus validaciones
