@@ -37,6 +37,7 @@ const Form = () => {
       setErrors(true);
     }
   };
+console.log("Ensayito")
 
   return (
     <>
