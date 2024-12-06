@@ -1,0 +1,55 @@
+Folder PATH listing
+Volume serial number is E658-DE0F
+C:.
+|   .eslintrc.cjs
+|   .gitignore
+|   index.html
+|   package-lock.json
+|   package.json
+|   README.md
+|   tree.txt
+|   vite.config.js
++---public
+|   |   Demo -Final-Front III.gif
+|   |   DH.ico
+|   |   favicon.ico
+|   |   index.html
+|   |   manifest.json
+|   |   robots.txt
+|   |   
+|   \---images
+|           DH.png
+|           doctor.jpg
+|           ico-facebook.png
+|           ico-instagram.png
+|           ico-tiktok.png
+|           ico-whatsapp.png
+|           
+\---src
+    |   App.jsx
+    |   index.css
+    |   main.jsx
+    |   
+    +---Components
+    |   |   Card.jsx
+    |   |   Footer.jsx
+    |   |   Form.jsx
+    |   |   Home.jsx
+    |   |   Message.jsx
+    |   |   Navbar.jsx
+    |   |   
+    |   \---utils
+    |           global.context.jsx
+    |           
+    +---Context
+    |       Context.jsx
+    |       
+    +---Reducers
+    |       Reducer.js
+    |       
+    \---Routes
+            Contact.jsx
+            Detail.jsx
+            Favs.jsx
+            Home.jsx
+            
