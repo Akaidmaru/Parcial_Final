@@ -1,18 +1,34 @@
-import React from 'react'
-
-
-//Este componente debera ser estilado como "dark" o "light" dependiendo del theme del Context
+import { useEffect, useState } from 'react'
+import { useParams } from 'react-router-dom'
+import DetailCard from '../Components/DetailCard'
+import { useDentistState } from '../Context/Context'
 
 const Detail = () => {
- 
-  // Consumiendo el parametro dinamico de la URL deberan hacer un fetch a un user en especifico
+  const { id } = useParams()
+  const { state } = useDentistState()
+  const [dentist, setDentist] = useState(null)
+
+  useEffect(() => {
+    const selectedDentist = state.data.find(d => d.id === parseInt(id))
+    console.log("Dentista seleccionado:", selectedDentist)
+    setDentist(selectedDentist)
+  }, [id, state.data])
 
   return (
-    <>
-      <h1>Detail Dentist id </h1>
-      {/* aqui deberan renderizar la informacion en detalle de un user en especifico */}
-      {/* Deberan mostrar el name - email - phone - website por cada user en especifico */}
-    </>
+    <main className="detail-container">
+      {dentist ? (
+        <DetailCard
+          name={dentist.name}
+          username={dentist.username}
+          id={dentist.id}
+          email={dentist.email}
+          phone={dentist.phone}
+          website={dentist.website}
+        />
+      ) : (
+        <p>Cargando información del dentista...</p>
+      )}
+    </main>
   )
 }
 
