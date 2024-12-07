@@ -72,17 +72,17 @@ console.log("Ensayito")
               value={user.email}
               onChange={(event) => setUser({ ...user, email: event.target.value })}
             />
-            <label>Telefono</label>
+            <label>Teléfono</label>
             <input
               type="text"
-              placeholder="Telefono"
+              placeholder="Teléfono"
               value={user.telefono}
               onChange={(event) => setUser({ ...user, telefono: event.target.value })}
             />
-            <label>Pais</label>
+            <label>País</label>
             <input
               type="text"
-              placeholder="Pais"
+              placeholder="País"
               value={user.pais}
               onChange={(event) => setUser({ ...user, pais: event.target.value })}
             />

@@ -19,15 +19,27 @@ code {
   cursor: pointer;
 }
 
+.favButton:hover{
+  background-color: rgba(58, 83, 152, 0.4);
+  padding: 10px;
+  border: none;
+  width: 100%;
+  cursor: pointer;
+  transform: translateY(-1px);
+}
+
 h1{
   text-align: center;
 }
 
-nav{
-  display: flex;
-  width: 80vw;
-  justify-content: flex-start;
-  padding: 1rem;
+nav {
+  display: flex; 
+  justify-content:start;
+  align-content: row-reverse;
+  justify-content: right;;
+  padding: 0.5rem 1rem;
+  background-color: #b3b1b1;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 a{
@@ -66,8 +78,9 @@ form{
   flex-direction: column;
   justify-content: space-around;
   width: 300px;
-  height: 100px;
+  height: 500px;
   margin: 0 auto;
+  padding: 1rem;
 }
 
 .card{
@@ -86,9 +99,9 @@ form{
 
 .card-grid{
   display: flex;
-  justify-content: space-evenly;
+  justify-content: start;
   gap: 1rem;
-  width: 90vw;
+  width: 70vw;
   height: auto;
   flex-wrap: wrap;
   margin: 0 auto;
@@ -119,4 +132,8 @@ tr:nth-child(even) {
 }
 .dark > a {
   color: white;
+}
+
+.dentist-items{
+  margin-left: 0.5rem;
 }

@@ -1,0 +1,29 @@
+
+
+  footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #f8f9fa;
+    margin-top: auto;
+  }
+  
+  .footer-logo {
+    height: 40px;
+  }
+  
+  .social-links {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+  }
+  
+  .social-links img {
+    height: 24px;
+    transition: transform 0.3s ease;
+  }
+  
+  .social-links img:hover {
+    transform: scale(1.1);
+  }
