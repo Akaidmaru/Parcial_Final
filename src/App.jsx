@@ -4,10 +4,13 @@ import Home from './Routes/Home.jsx' //src\Routes\Home.jsx
 import Favs from './Routes/Favs.jsx' //src\Routes\Favs.jsx
 import Form from './Components/Form'
 import { Routes, Route } from 'react-router-dom'
+import { useDentistState } from "./Context/Context";
 
 function App() {
+  const { state } = useDentistState();
+  
   return (
-    <div className="App">
+    <div className={`App ${state.theme}`}>
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
